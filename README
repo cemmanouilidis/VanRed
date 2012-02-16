@@ -1,14 +1,11 @@
-VanRed (eVaporate and Reauthor DVDs) is an application which makes it possible to copy the main movie from a DVD to your hard disc and which allows you to remove certain audio and subtitle streams and evaporates (requant) if necessary the video stream.
+VanRed (eVaporate and Reauthor DVDs) 
+Copy the main movie of a DVD to your hard disc and select which audio and subtitles to keep.
 
-The application combines the power of lsdvd [1] and streamanalyze [2] to analyze the content of a DVD and (tries) to calculate the title of the DVD that contain the main movie.
-
-The information, that are readed and calculated are about (depends on the reading mode):
-   certain audio streams (language, format, channels, frequency, size, etc.)
-   certain subtitle streams (language and size)
-   the video stream (resolution, code, size etc.)
-   the title (number of audio and subtitle streams, number of chapters, number of cells contained in a PGC (programm chain), color palette, size, etc.)
-
-VanReD works in interactive mode and firstly determines the content of a DVD. In a second step the user is asked which of the audio and subtitle streams he wants to keep. With the collected information VanReD generates a XML file for dvdauthor, that specifies the new DVD structure and a color palette containing color information for subtitles. Last the generated XML file is passed to dvdauthor.
+The following information are provided about a DVD:
+   - Audio Streams (language, format, channels, frequency, size, etc.)
+   - Subtitle Streams (language and size)
+   - Video Stream (resolution, code, size etc.)
+   - Title (number of audio and subtitle streams, number of chapters, number of cells contained in a PGC (programm chain), color palette, size, etc.)
 
 In order to build and run VanRed you will need in addition the following piece of software:
    libdvdread 
