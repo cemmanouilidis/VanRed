@@ -1,0 +1,29 @@
+VanRed (eVaporate and Reauthor DVDs) is an application which makes it possible to copy the main movie from a DVD to your hard disc and which allows you to remove certain audio and subtitle streams and evaporates (requant) if necessary the video stream.
+
+The application combines the power of lsdvd [1] and streamanalyze [2] to analyze the content of a DVD and (tries) to calculate the title of the DVD that contain the main movie.
+
+The information, that are readed and calculated are about (depends on the reading mode):
+   certain audio streams (language, format, channels, frequency, size, etc.)
+   certain subtitle streams (language and size)
+   the video stream (resolution, code, size etc.)
+   the title (number of audio and subtitle streams, number of chapters, number of cells contained in a PGC (programm chain), color palette, size, etc.)
+
+VanReD works in interactive mode and firstly determines the content of a DVD. In a second step the user is asked which of the audio and subtitle streams he wants to keep. With the collected information VanReD generates a XML file for dvdauthor, that specifies the new DVD structure and a color palette containing color information for subtitles. Last the generated XML file is passed to dvdauthor.
+
+In order to run VanRed you will need in addition the following piece of software:
+   libdvdread from the ogle project: http://www.dtek.chalmers.se/groups/dvd/   
+   dvdauthor: http://dvdauthor.sourceforge.net/
+   vamps and play_cell since version 0.98: http://sourceforge.net/projects/vamps
+
+Todo:
+   - Gtk2 GUI with preview (xine-lib). CANCELED. not enough Gtk documentation out there, i will do probably an QT 4 app
+   - Ability to add a simple menu to the DVD
+
+Links:
+   [1] AcidRip Projekt, http://untrepid.com/acidrip/lsdvd.html
+   [2] StreamDVD Projekt, http://www.badabum.de/streamdvd.html
+
+I appreciate any kind of feedback:
+   vanred@users.sourceforge.net
+   vanred@gmx.org
+

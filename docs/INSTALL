@@ -1,0 +1,9 @@
+#DEUTSCH
+
+1. Um VanReD zu kompilieren muss das Makefile ausgeführt werden. Hierzu muss lediglich in das VanRed-Verzeichnis gewechselt werden und der Befehl "make" in einer Konsole eingegeben werden.
+2. Ist das kompilieren von VanReD erfolgreich gewesen, kann VanReD installiert werden. Hierzu wird der Befehl "make install" (als root) in der Konsole eingegeben. Das Installationsverzeichnis ist per default /usr/local/bin. Dieses kann jedoch geändert werden, indem im Makefile (im Verzeichnis src) der Wert der Variable TARGET_PATH überschrieben wird.
+
+#ENGLISH
+
+1. In order to compile VanReD change into the VanReD directory and type make.
+2. After VanReD is compiled, you can install it by typing 'make install'. The default install directory is /usr/local/bin but you can change the install directory by entering a new value vor the variable TARGET_PATH in the Makefile (directory src).
